@@ -12,3 +12,16 @@ Srinitha Srikanth: 55178917
 # How to Run
 
 # Assumptions
+
+# Question 1: Empirical Comparison
+| Input File | k | m | FIFO | LRU | OPTFF |
+| ---------- | -- | ---| --- | ---| ------ |
+| File1 | n/a | n/a | n/a | n/a | n/a |
+| File2 | n/a | n/a | n/a | n/a | n/a |
+| File3 | n/a | n/a | n/a | n/a | n/a |
+
+# Question 2: Bad Sequence for LRU or FIFO
+n/a
+
+# Question 3: Prove OPTFF is Optimal
+n/a
