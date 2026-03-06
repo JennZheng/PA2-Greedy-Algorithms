@@ -16,23 +16,22 @@ class OPTFF:
             self.cache.add(item)
             return "miss"
 
-        # cache full → choose victim farthest in future
+        # cache full → choose farthest in future
         farthest = -1
-        victim = None
+        select = None
 
         for c in self.cache:
             try:
                 next_use = self.r.index(c, i + 1)
             except ValueError:
-                # never used again → best victim
-                victim = c
+                select = c
                 break
 
             if next_use > farthest:
                 farthest = next_use
-                victim = c
+                select = c
 
-        self.cache.remove(victim)
+        self.cache.remove(select)
         self.cache.add(item)
 
         return "miss"
@@ -47,3 +46,4 @@ def optff(k, m, r):
             misses += 1
 
     return misses
+
