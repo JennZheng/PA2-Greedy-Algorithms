@@ -13,9 +13,9 @@ To run the program from the root directory: 'python src/main.py <input_file>'
 ex: 'python src/main.py data/example.in'  
   
   The output should be like this:  
-  FIFO  : 6  
-  LRU   : 5  
-  OPTFF : 5
+  FIFO  : <misses>  
+  LRU   : <misses>  
+  OPTFF : <misses>
 
 # Assumptions 
 - Input files are stored in the 'data' folder 
