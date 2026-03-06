@@ -3,6 +3,7 @@ COP4533 Programing Assignment Two
 
 # Team
 Jennifer Zheng: 52838059
+Srinitha Srikanth: 55178917
 
 # Repository Structure
 
