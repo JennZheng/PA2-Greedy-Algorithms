@@ -43,7 +43,8 @@ For `k=3` there does exists a request sequence for which OPTFF incurs **strictly
   | Input File | k | m | FIFO | LRU | OPTFF |
 | ---------- | -- | ---| --- | ---| ------ |
 | File1 | 3 | 50 | 45 | 46 | 31 |  
-In the table you can see that FIFO has 45 misses, LRU has 46 misses, and OPTFF has 31 misses.  
+  
+  In the table you can see that FIFO has 45 misses, LRU has 46 misses, and OPTFF has 31 misses.  
   
   The reason why OPTFF incurs strictly fewer misses than FIFO or LRU in this sequence is due to how OPTFF has future knowledge of what item is not going to be needed for the longest time. LRU and FIFO do not have this future knowledge which can lead them to evict the an item that is needed later on.
 
