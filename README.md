@@ -18,7 +18,7 @@ ex: `python src/main.py data/example.in`
   OPTFF : misses
 
 # Assumptions 
-- Input files are stored in the 'data' folder 
+- Input files are stored in the `data` folder 
 - Input files should be formatted like this:
     - first line: `k m`
     - second line: `r1 r2 r3 ... rm`
@@ -37,7 +37,9 @@ ex: `python src/main.py data/example.in`
   OPTFF does seem to consistently have the fewest misses.  
   When comparing FIFO to LRU, both have very similar miss counts, but it does seem that LRU is slightly better with misses.
 # Question 2: Bad Sequence for LRU or FIFO
-n/a
+For `k=3` there does exists a request sequence for which OPTFF incurs **strictly fewer misses** than LRU/FIFO.  
+You can see such behavior when running `file1.in` from the `data` folder and when viewing the table in **Question 1**. In the table you can see that FIFO has 45 misses, LRU has 46 misses, and OPTFF has 31 misses.  
+The reason why OPTFF incurs strictly fewer misses than FIFO or LRU in this sequence is due to how OPTFF has future knowledge of what item is not going to be needed for the longest time. LRU and FIFO do not have this future knowledge which can lead them to evict the an item that is needed later on.
 
 # Question 3: Prove OPTFF is Optimal
 n/a
