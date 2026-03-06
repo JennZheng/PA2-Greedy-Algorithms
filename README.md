@@ -9,19 +9,19 @@ Srinitha Srikanth: 55178917
 N/A
 
 # How to Run
-To run the program from the root directory: 'python src/main.py <input_file>'  
-ex: 'python src/main.py data/example.in'  
+To run the program from the root directory: `python src/main.py <input_file>`  
+ex: `python src/main.py data/example.in`  
   
   The output should be like this:  
-  FIFO  : <misses>  
-  LRU   : <misses>  
-  OPTFF : <misses>
+  FIFO  : misses  
+  LRU   : misses  
+  OPTFF : misses
 
 # Assumptions 
 - Input files are stored in the 'data' folder 
 - Input files should be formatted like this:
-    - first line: 'k m'
-    - second line: 'r1 r2 r3 ... rm'
+    - first line: `k m`
+    - second line: `r1 r2 r3 ... rm`
 - The number of requests m matches the number of integers provided.
 - Request IDs are integers.
 - Cache capacity k ≥ 1.
